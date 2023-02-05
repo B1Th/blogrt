@@ -53,6 +53,14 @@ a {
 
 .intro_section {
   overflow: hidden;
+  height: 135vh;
+}
+.intro_des_layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -10rem;
 }
 .intro_section .heading {
   text-align: center;
@@ -60,22 +68,72 @@ a {
 }
 .intro_section .des {
   text-align: left;
-  border: 1px solid black;
+  margin-right: -8rem;
   margin-left: 8rem;
 }
-.intro_section .des h1 {
+.des h1 {
   font-weight: 500;
   padding-top: 3rem;
 }
-.intro_section .des p {
+.des p {
   padding-top: 2rem;
   line-height: 1.5rem;
 }
-.intro_des {
-  display: flex;
-}
+
 .intro_des img {
   position: relative;
   right: -17rem;
+}
+
+/* MOBILE SECTION */
+
+.mobile_section {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  height: 20rem;
+  background-color: hsl(237, 17%, 21%);
+  color: #fff;
+  gap: 5rem;
+  padding: 11rem 5rem 13rem;
+  border-top-right-radius: 6rem;
+  border-bottom-left-radius: 6rem;
+}
+.mobile_des {
+  margin-right: 8rem;
+}
+.mobile_section .mobile_des h1 {
+  font-weight: 500;
+  padding-top: 3rem;
+}
+.mobile_section .mobile_des p {
+  padding-top: 2rem;
+  line-height: 1.5rem;
+}
+.mobile_img {
+  margin-left: 8rem;
+  margin-top: 5rem;
+}
+
+/* SERVICE SECTION */
+
+.service_section {
+  overflow: hidden;
+}
+.service_des_layer {
+  margin-top: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   top: -10rem;
+}
+.service_des img {
+  position: relative;
+  left: -17rem;
+}
+.service_section .des {
+  text-align: left;
+  margin-left: -10rem;
+  margin-right: 8rem;
 }

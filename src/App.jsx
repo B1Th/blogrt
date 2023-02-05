@@ -2,6 +2,10 @@ import { Button } from "@mui/material";
 import React from "react";
 import Intro from "./Intro";
 import Navbar from "./Navbar";
+import Common from "./Common";
+import img2 from "../src/images/illustration-phones.svg";
+import img3 from "../src/images/bg-pattern-circles.svg";
+import Service from "./Service";
 
 const App = () => {
   return (
@@ -19,6 +23,21 @@ const App = () => {
       </div>
       <div className="intro_section">
         <Intro />
+      </div>
+      <div className="mobile_section">
+        <div className="mobile_img">
+          <img src={img2} alt="Mobile image" className="front_img" />
+          {/* <img src={img3} alt="Pattern image" className="back_img" /> */}
+        </div>
+        <div className="mobile_des">
+          <Common
+            heading="State of the Art Infrastructure"
+            para="With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive."
+          />
+        </div>
+      </div>
+      <div className="service_section">
+        <Service />
       </div>
     </>
   );
