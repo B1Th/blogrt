@@ -1,13 +1,81 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* LANDING */
+
+.landing {
+  height: 90vh;
+  background-color: hsl(356, 100%, 66%);
+  color: #fff;
+  border-bottom-left-radius: 6rem;
+}
+a {
+  text-decoration: none;
+}
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.home {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.nav_bar ol {
+  display: inline-flex;
+  gap: 3rem;
+  list-style: none;
+}
+.nav_bar ol a {
+  color: #fff;
+}
+
+.landing_des {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.landing_des h1 {
+  font-size: 3rem;
+}
+.landing_des .start {
+  display: flex;
+  gap: 2rem;
+}
+
+/* INTRO SECTION */
+
+.intro_section {
+  overflow: hidden;
+}
+.intro_section .heading {
+  text-align: center;
+  margin: 5rem;
+}
+.intro_section .des {
+  text-align: left;
+  border: 1px solid black;
+  margin-left: 8rem;
+}
+.intro_section .des h1 {
+  font-weight: 500;
+  padding-top: 3rem;
+}
+.intro_section .des p {
+  padding-top: 2rem;
+  line-height: 1.5rem;
+}
+.intro_des {
+  display: flex;
+}
+.intro_des img {
+  position: relative;
+  right: -17rem;
+  top: -10rem;
 }
