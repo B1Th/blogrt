@@ -6,11 +6,12 @@ import Common from "./Common";
 import img2 from "../src/images/illustration-phones.svg";
 import img3 from "../src/images/bg-pattern-circles.svg";
 import Service from "./Service";
+import Footer from "./Footer";
 
 const App = () => {
   return (
     <>
-      <div className="landing">
+      <div className="landing" id="landing">
         <Navbar />
         <div className="landing_des">
           <h1>A modern publishing platform</h1>
@@ -21,10 +22,12 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="intro_section">
+
+      <div className="intro_section" id="intro_section">
         <Intro />
       </div>
-      <div className="mobile_section">
+
+      <div className="mobile_section" id="mobile_section">
         <div className="mobile_img">
           <img src={img2} alt="Mobile image" className="front_img" />
           {/* <img src={img3} alt="Pattern image" className="back_img" /> */}
@@ -36,8 +39,13 @@ const App = () => {
           />
         </div>
       </div>
-      <div className="service_section">
+
+      <div className="service_section" id="service_section">
         <Service />
+      </div>
+
+      <div className="footer" id="footer">
+        <Footer />
       </div>
     </>
   );

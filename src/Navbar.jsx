@@ -5,18 +5,18 @@ const Navbar = () => {
   return (
     <>
       <div className="nav_bar">
-        <a href="" className="home">
+        <a href="#landing" className="home">
           Blogr
         </a>
         <ol>
           <li>
-            <a href="">Product</a>
+            <a href="#intro_section">Product</a>
           </li>
           <li>
-            <a href="">Company</a>
+            <a href="#mobile_section">Company</a>
           </li>
           <li>
-            <a href="">Connect</a>
+            <a href="#footer">Connect</a>
           </li>
         </ol>
         <div className="signin_up">
